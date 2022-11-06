@@ -23,9 +23,15 @@ body {
 .inactive-mobile {
   display: none !important;
 }
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Navbar Section */
 #navbar {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
@@ -128,16 +134,101 @@ body {
   margin: 0;
 }
 /* premiere-cover */
-#premiere-cover {
+#header-premiere-cover {
   position: relative;
+  height: 25vh;
+  background-color: var(--blue);
+  margin-top: 66px;
+}
+#premiere-cover {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  background-image: url('https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.premiere-cover__title {
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 30px;
 }
 /* main */
 #main {
   position: relative;
 }
+#keep-watching {
+  height: 30vh;
+  margin: 8px 0;
+  padding-left: 4px;
+  
+  display: flex;
+  flex-direction: column;
+}
+.keep-watching__title {
+  position: relative;
+  top: 12px;
+
+  font-size: 2.5rem;
+  height: 15%;
+  color: var(--white);
+}
+.view-components-container {
+  height: 85%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.view-component {
+  display: flex;
+  height: 85%;
+  min-width: 280px;
+  margin-right: 8px;
+  border-radius: 5px;
+  background-color: var(--secudary);
+  scroll-snap-align: center;
+
+  background-image: url('https://images.pexels.com/photos/6447217/pexels-photo-6447217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* catalague section */
 .catalague {
-  background-color: var(--blue);
+  height: 25vh;
+  padding-left: 4px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.catalague__title {
+  position: relative;
+  top: 8px;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  margin-right: 8px;
+  color: var(--white);
+}
+.see-more__link {
+  position: relative;
+  top: 8px;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2192FF;
+}
+
+#footer {
+  height: 10vh;
+  background-color: #000;
 }
 
 @media (min-width: 640px) {
@@ -170,5 +261,16 @@ body {
   .hamburger-menu-icon-container,
   .items-navbar-container__item {
     cursor: pointer;
+  }
+  #header-premiere-cover {
+    margin-top: 0;
+  }
+  #header-premiere-cover,
+  #main,
+  #footer {
+    margin-left: 60px;
+  }
+  .view-components-container {
+    overflow-x: hidden;
   }
 }
