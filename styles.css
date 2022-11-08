@@ -159,32 +159,73 @@ h3 {
 /* main */
 #main {
   position: relative;
+  padding: 0 4px;
 }
 #keep-watching {
   height: 30vh;
   margin: 8px 0;
-  padding-left: 4px;
   
   display: flex;
   flex-direction: column;
 }
 .keep-watching__title {
-  position: relative;
-  top: 12px;
-
   font-size: 2.5rem;
-  height: 15%;
+  height: 10%;
   color: var(--white);
 }
-.view-components-container {
-  height: 85%;
+.scroll-container {
+  position: relative;
+  height: 90%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-arrow,
+.right-arrow {
+  height: 100%;
+  width: 10%;
+  position: absolute;
+  background: rgba(0,0,0,0.3);
+}
+.arrow-icon {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+.left-arrow {
+  left: 0;
+}
+.left-arrow-icon {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.right-arrow {
+  right: 0;
+}
+.right-arrow-icon {
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.view-components-container {
+  height: 100%;
+  width: 90%;
 
   display: flex;
   align-items: center;
-  overflow-x: scroll;
+  overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+  scrollbar-color: var(--gray) var(--blue);
+  scrollbar-width: thin;
+}
+.view-components-container::-webkit-scrollbar {
+  height: 8px;
+  background-color: var(--blue);
+} 
+.view-components-container::-webkit-scrollbar-thumb {
+  background-color: var(--gray);
 }
 .view-component {
   display: flex;
@@ -193,17 +234,21 @@ h3 {
   margin-right: 8px;
   border-radius: 5px;
   background-color: var(--secudary);
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 
   background-image: url('https://images.pexels.com/photos/6447217/pexels-photo-6447217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+.view-component:nth-child(even) {
+  background-image: url('https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
 /* catalague section */
 .catalague {
   height: 25vh;
-  padding-left: 4px;
+  margin-bottom: 28px;
 
   display: flex;
   flex-wrap: wrap;
@@ -215,6 +260,7 @@ h3 {
   text-transform: capitalize;
   font-size: 2.5rem;
   margin-right: 8px;
+  margin-bottom: 12px;
   color: var(--white);
 }
 .see-more__link {
@@ -270,7 +316,5 @@ h3 {
   #footer {
     margin-left: 60px;
   }
-  .view-components-container {
-    overflow-x: hidden;
-  }
+  
 }
