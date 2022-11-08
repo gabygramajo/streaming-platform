@@ -1,3 +1,4 @@
+const navbar = document.querySelector("#navbar");
 const desktopLayouts = document.querySelectorAll(".desktop-layout");
 const itemsNavbarContainers = document.querySelectorAll(".items-navbar-container");
 const categoryNames = document.querySelectorAll(".category-name");
@@ -17,6 +18,7 @@ hamburgerMenuIcon.addEventListener('click', toggleNavbar);
 function toggleNavbar() {
   inputSearch.classList.toggle('inactive');
   userContainerInfo.classList.toggle('inactive');
+  navbar.classList.toggle('h100vh');
 
   classListToggle(itemsNavbarContainers, 'inactive-mobile');
   classListToggle(desktopLayouts, 'desktop-layout');
