@@ -29,6 +29,10 @@ function toggleNavbarMenu() {
   userContainerInfo.classList.toggle('inactive');
   categoryList.forEach( category => category.classList.toggle('inactive'));
   arrowCategoriesIcon.classList.toggle('inactive');
+
+  const isInactive = categories.classList.contains('inactive');
+  if (!isInactive)
+    collapseCategories();
 }
 
 
