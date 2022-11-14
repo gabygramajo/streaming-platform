@@ -223,7 +223,7 @@ main p {
   align-items: flex-end;
   justify-content: center;
 
-  background-image: url('https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg');
+  background-image: url('https://1.bp.blogspot.com/-d25rZ9TVEYM/YQA9tZrQa6I/AAAAAAAAWus/JiL8A67k7cspIF0dP40APaLMLmc-8U9-wCLcBGAsYHQ/s16000/jungle-cruise-disney.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -306,14 +306,35 @@ main p {
   background-color: var(--secudary);
   scroll-snap-align: start;
 
-  background-image: url('https://images.pexels.com/photos/6447217/pexels-photo-6447217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('http://los40ar00.epimg.net/los40/imagenes/2019/03/19/cine/1553003513_909168_1553003698_noticia_normal.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.view-component:nth-child(even) {
-  background-image: url('https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=600');
+.view-component:nth-child(2) {
+  background-image: url('https://cineon24.files.wordpress.com/2015/08/horizontal_fecha_estreno-medium.jpg');
 }
+.view-component:nth-child(3) {
+  background-image: url('https://claroblog.com.ni/wp-content/uploads/2021/11/DRAGONSRIDERSOFBERK-01-01-00WHORIZONTAL.jpg');
+}
+.view-component:nth-child(4) {
+  background-image: url('https://stargamers.com.pe/index/wp-content/uploads/2019/11/MKA-LionKingThe2019H.jpg');
+}
+.view-component:nth-child(5) {
+  background-image: url('https://claroblog.com.ni/wp-content/uploads/2021/11/SPIRITUNTAMEDWHORIZONTAL.jpg');
+}
+.view-component:nth-child(6) {
+  background-image: url('https://claroblog.com.ni/wp-content/uploads/2021/11/DRAGONSRIDERSOFBERK-01-01-00WHORIZONTAL.jpg');
+}
+.view-component:nth-child(7) {
+  background-image: url('https://www.ecartelera.com/carteles/10200/10231/014.jpg');
+}.view-component:nth-child(8) {
+  background-image: url('https://cineon24.files.wordpress.com/2015/08/horizontal_fecha_estreno-medium.jpg');
+}
+.view-component:nth-child(9) {
+  background-image: url('https://claroblog.com.ni/wp-content/uploads/2021/11/DRAGONSRIDERSOFBERK-01-01-00WHORIZONTAL.jpg');
+}
+
 
 /* catalague section */
 .catalague {
