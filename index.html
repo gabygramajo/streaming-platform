@@ -9,12 +9,14 @@
 </head>
 <body>
 
-  <nav id="navbar" class="desktop-layout">
+  <nav id="navbar">
     <div class="hamburger-menu-icon-container">
       <img class="hamburger-menu-icon" src="./assets/icons/hamburger-menu.svg" alt="menu icon by freeicons.io" title="icon by freeicons.io">
     </div>
 
-    <ul class="items-navbar-container inactive-mobile desktop-layout">
+    <div class="navbar-sections-container">
+      
+    <ul class="items-navbar-container">
       
       <li class="items-navbar-container__item search-container">
         <img class="navbar-icon search-icon" src="./assets/icons/search-icon.svg" alt="search icon by freeicons.io" title="icon by freeicons.io">
@@ -42,11 +44,54 @@
         </a> 
       </li>
       
-      <li class="items-navbar-container__item">
+      <li id="category-list-container" class="items-navbar-container__item">
         <a href="#" class="items-navbar-container__item__link">
           <img class="navbar-icon categories-icon" src="./assets/icons/categories-icon.svg" alt="categories icon by freeicons.io" title="icon by freeicons.io">
           <span class="category-name">Categorías</span>
-        </a> 
+          <img class="navbar-icon arrow-categories-icon" src="./assets/icons/right-arrow-icon.svg" alt="categories icon by freeicons.io" title="icon by freeicons.io">
+
+        </a>
+        <ul class="category-list inactive">
+          <li class="category-list__category">
+            <a class="category__link" href="#">Acción y aventuras</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Comedia</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Drama</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Documental</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Infantil y familiar</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Fantasía</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Terror</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Romance</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Ciencia ficción</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Suspenso</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Anime</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Deportes</a>
+          </li>
+          <li class="category-list__category">
+            <a class="category__link" href="#">Crimen y policíaco</a>
+          </li>
+        </ul> 
       </li>
       
       <li class="items-navbar-container__item">
@@ -64,7 +109,7 @@
       </li>
     </ul>
 
-    <ul class="items-navbar-container manage-account inactive-mobile desktop-layout">
+    <ul class="items-navbar-container manage-account">
       
       <li class="items-navbar-container__item user-container">
         <img class="navbar-icon icon-user-profile" src="./assets/icons/profile-icon.svg" alt="profile icon by freeicons.io" title="icon by freeicons.io">
@@ -79,8 +124,10 @@
         <img class="navbar-icon icon-setting" src="./assets/icons/setting-icon.svg" alt="setting icon by freeicons.io" title="icon by freeicons.io">
       </li>
     </ul>
+    </div>
     
   </nav>
+
 
   <header id="header-premiere-cover">
     <section id="premiere-cover">
